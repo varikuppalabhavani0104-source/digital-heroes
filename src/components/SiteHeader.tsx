@@ -13,7 +13,7 @@ export async function SiteHeader() {
         <Logo />
         <nav className="hidden items-center gap-7 text-sm font-medium text-ink-700 md:flex">
           <Link href="/#how" className="hover:text-ink">How it works</Link>
-          <Link href="/#impact" className="hover:text-ink">Charities</Link>
+          <Link href="/charities" className="hover:text-ink">Charities</Link>
           <Link href="/pricing" className="hover:text-ink">Pricing</Link>
         </nav>
         <div className="flex items-center gap-2">

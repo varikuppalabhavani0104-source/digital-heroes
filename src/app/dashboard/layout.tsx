@@ -16,6 +16,12 @@ export default async function DashboardLayout({ children }: { children: React.Re
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
           <Logo />
           <div className="flex items-center gap-1">
+            <Link
+  href="/#how"
+  className="rounded-lg px-3 py-2 text-sm font-semibold text-ink-700 hover:bg-ink-50"
+>
+  How it works
+</Link>
             {profile?.role === "admin" && (
               <Link href="/admin" className="rounded-lg px-3 py-2 text-sm font-semibold text-lagoon-700 hover:bg-lagoon-50">Admin</Link>
             )}

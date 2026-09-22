@@ -7,11 +7,11 @@ import { createClient } from "@/lib/supabase/server";
 /** `ready: false` items are shown as "soon" so no link ever leads to a broken page. */
 const NAV = [
   { href: "/admin", label: "Overview", ready: true },
-  { href: "/admin/users", label: "Users", ready: false },
-  { href: "/admin/subscriptions", label: "Subscriptions", ready: false },
-  { href: "/admin/draws", label: "Draws", ready: false },
-  { href: "/admin/charities", label: "Charities", ready: false },
-  { href: "/admin/winners", label: "Winners & payouts", ready: false },
+  { href: "/admin/users", label: "Users", ready: true },
+  { href: "/admin/subscriptions", label: "Subscriptions", ready: true },
+  { href: "/admin/draws", label: "Draws", ready: true },
+  { href: "/admin/charities", label: "Charities", ready: true },
+  { href: "/admin/winners", label: "Winners & payouts", ready: true },
 ];
 
 export default async function AdminLayout({ children }: { children: React.ReactNode }) {
